@@ -1,9 +1,11 @@
 import './card.styles.css';
 
-export const Card = () => {
-	return (
-		<div className="card">
-			<h1>Card</h1>
-		</div>
-	)
+export const Card = ({ monster }) => {
+  return (
+    <div className="card-container">
+      <img src={`https://robohash.org/${monster.id}?set=set2&size=180x180`} alt="" />
+      <h2>{monster.name}</h2>
+      <p>{monster.email}</p>
+    </div>
+  )
 }
